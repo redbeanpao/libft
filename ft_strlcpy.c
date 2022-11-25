@@ -1,6 +1,10 @@
 #include "libft.h"
 
-size_t	ft_strlcpy(char * dst, const char * src, size_t dstsize)
+// strlcpy() copies up to dstsize - 1 characters from the string src to dst, NUL-terminating the
+//      result if dstsize is not 0.
+
+
+/* size_t	ft_strlcpy(char * dst, const char * src, size_t dstsize)
 {
 	int	i;
 	char	*d;
@@ -20,13 +24,13 @@ size_t	ft_strlcpy(char * dst, const char * src, size_t dstsize)
 		i++;
 	}
 	return (d);
-}
+} */
 
 int	main (void)
 {
 	char dst[50] = "Hello";
-	const src[50] = "World";
+	const char src[50] = "World";
 	printf("Dest before strlcpy %s\n", dst);
-	strlcpy(dst, src, strlen(src + 1));
+	strlcpy(dst, src, 0);
 	printf("Dest after strlcpy %s\n", dst);
 }
