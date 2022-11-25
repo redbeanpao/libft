@@ -1,46 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/23 01:22:33 by hleong            #+#    #+#             */
-/*   Updated: 2022/11/25 17:11:30 by hleong           ###   ########.fr       */
+/*   Created: 2022/11/24 19:16:28 by hleong            #+#    #+#             */
+/*   Updated: 2022/11/25 17:05:40 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
     int		i;
-    char	*h;
+    char	*d;
+    char	*s;
 
-    h = (char	*)s;
+    s = (char *)src;
+    d = (char *)dst;
     i = 0;
-    while (i < n)
-    {
-       h[i] = 0;
-       i++; 
-    }
+
+	if (d > s)
+	{
+		while (len > 0)
+		len--;	
+		d[i] = s[i];
+	}
+	else
+	ft_memcpy (dst, src, len);
 }
-
-/* int main (void)
-{
-    char *x;
-
-    x = "hello world!";
-
-    char *a;
-
-    a = strdup(x);
-    ft_bzero(a,5);
-    a[12] = 'a';
-    int i = 0;
-    while (i < 20)
-    {
-    printf("%c", a[i++]);
-    }
-    free (a);
-} */
