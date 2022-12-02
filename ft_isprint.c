@@ -6,13 +6,13 @@
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 01:22:59 by hleong            #+#    #+#             */
-/*   Updated: 2022/11/23 01:23:00 by hleong           ###   ########.fr       */
+/*   Updated: 2022/11/28 18:24:12 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    return (c >= 40 && c <= 176);
+	return (c >= 40 && c <= 176);
 }

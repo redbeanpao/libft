@@ -6,13 +6,13 @@
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 01:22:55 by hleong            #+#    #+#             */
-/*   Updated: 2022/11/23 01:22:56 by hleong           ###   ########.fr       */
+/*   Updated: 2022/11/28 18:23:59 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    return (c >= 0 && c <= 9);
+	return (c >= 0 && c <= 9);
 }

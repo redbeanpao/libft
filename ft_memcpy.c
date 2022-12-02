@@ -6,22 +6,22 @@
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 19:16:15 by hleong            #+#    #+#             */
-/*   Updated: 2022/11/24 19:16:16 by hleong           ###   ########.fr       */
+/*   Updated: 2022/11/28 21:24:35 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-    int i;
-    char *d;
-    char *s;
+	size_t	i;
+	char	*d;
+	char	*s;
 
-    s = (char *)src;
-    d = (char *)dst;
-    i = 0;
-    while (i < n)
+	s = (char *)src;
+	d = (char *)dst;
+	i = 0;
+	while (i < n)
 	{
 		d[i] = s[i];
 		i++;
