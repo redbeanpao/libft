@@ -6,7 +6,7 @@
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 13:45:26 by hleong            #+#    #+#             */
-/*   Updated: 2022/12/02 13:54:00 by hleong           ###   ########.fr       */
+/*   Updated: 2022/12/02 15:46:48 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-int	main (void)
+/* int	main (void)
 {
 	int	c;
 	int	c1;
@@ -30,4 +30,4 @@ int	main (void)
 	printf("Int c after ft_tolower %c\n", ft_tolower(c));
 	printf("Int c before tolower %c\n", c1);
 	printf("Int c after tolower %c\n", tolower(c));
-}
+} */

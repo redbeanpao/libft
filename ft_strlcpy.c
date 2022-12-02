@@ -6,7 +6,7 @@
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 20:38:12 by hleong            #+#    #+#             */
-/*   Updated: 2022/11/28 21:57:29 by hleong           ###   ########.fr       */
+/*   Updated: 2022/12/02 15:46:36 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (i);
 }
 
-int	main (void)
+/* int	main (void)
 {
 	char dst[50] = "Hello";
 	const char src[50] = "World";
@@ -42,4 +42,4 @@ int	main (void)
 	printf("Dest before ft_strlcpy %s\n", dst2);
 	ft_strlcpy(dst2, src2, 3);
 	printf("Dest after ft_strlcpy %s\n", dst2);
-}
+} */
