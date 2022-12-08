@@ -1,19 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/23 01:22:43 by hleong            #+#    #+#             */
-/*   Updated: 2022/12/08 16:31:01 by hleong           ###   ########.fr       */
+/*   Created: 2022/12/08 16:31:44 by hleong            #+#    #+#             */
+/*   Updated: 2022/12/08 16:31:45 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	return ((c >= 0 && c <= 9) || (c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z'));
+	size_t	i;
+	char	*str;
+	char	ch;
+
+	i = 0;
+	str = (char *)s;
+	ch = (char)c;
+	while (i < n)
+	{
+		if (*str == ch)
+		{
+			return (str);
+		}
+		i++;
+		str++;
+	}
+	return (0);
 }
+
+/* int	main (void)
+{
+	printf("Test memchr %s\n", memchr("Hello", 'l', 3));
+	printf("Test ft_memchr %s\n", ft_memchr("Hello", 'l', 3));
+} */
