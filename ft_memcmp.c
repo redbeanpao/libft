@@ -1,38 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hleong <hleong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/08 16:31:44 by hleong            #+#    #+#             */
-/*   Updated: 2022/12/08 18:07:57 by hleong           ###   ########.fr       */
+/*   Created: 2022/12/08 16:37:31 by hleong            #+#    #+#             */
+/*   Updated: 2022/12/08 19:22:52 by hleong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
-	char	*str;
-	char	ch;
+	char	*str1;
+	char	*str2;
 
 	i = 0;
-	str = (char *)s;
-	ch = (char)c;
+	str1 = (char *)s1;
+	str2 = (char *)s2;
 	while (i < n)
 	{
-		if (*str == ch)
-			return (str);
-		i++;
-		str++;
+		if (str1[i] == str2[i])
+			i++;
+		else
+			return (1);
 	}
 	return (0);
 }
 
 /* int	main (void)
 {
-	printf("Test memchr %s\n", memchr("Hello", 'l', 3));
-	printf("Test ft_memchr %s\n", ft_memchr("Hello", 'l', 3));
+	printf("Memcmp test %d\n", memcmp("Hello", "Hell", 2));
+	printf("ft_memcmp test %d\n", ft_memcmp("Hello", "Hell", 2));
 } */
