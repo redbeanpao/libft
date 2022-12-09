@@ -8,6 +8,8 @@
 
 ## [Libft](https://github.com/redbeanpao/libft) - Recreate functions of the C standard library as well as some other utility functions.
 
+- [libft.h](https://github.com/redbeanpao/libft/blob/main/libft.h) - library containing all functions
+- [ft_atoi](https://github.com/redbeanpao/libft/blob/main/ft_atoi.c) - convert ASCII string to integer
 - [ft_bzero](https://github.com/redbeanpao/libft/blob/main/ft_bzero.c) - write zeroes to a byte string
 - [ft_isalnum](https://github.com/redbeanpao/libft/blob/main/ft_isalnum.c) - alphanumeric character test
 - [ft_isalpha](https://github.com/redbeanpao/libft/blob/main/ft_isalpha.c) - alphabetic character test
